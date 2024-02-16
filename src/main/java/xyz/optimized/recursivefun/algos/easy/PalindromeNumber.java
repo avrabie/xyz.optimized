@@ -1,6 +1,7 @@
-package xyz.optimized.recursivefun.algos;
+package xyz.optimized.recursivefun.algos.easy;
 
 /**
+ * Probem 9
  * The PalindromeNumber class checks whether a given number is a palindrome.
  */
 public class PalindromeNumber {
