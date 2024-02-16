@@ -11,28 +11,28 @@ public class PalindromeNumberTests {
     @Test
     public void testGetPowerWithZero() {
         PalindromeNumber palindromeNumber = new PalindromeNumber();
-        int result = palindromeNumber.getPower(0);
+        int result = palindromeNumber.get10thPower(0);
         Assertions.assertEquals(0, result);
     }
 
     @Test
     public void testGetPowerWithSingleDigit() {
         PalindromeNumber palindromeNumber = new PalindromeNumber();
-        int result = palindromeNumber.getPower(5);
+        int result = palindromeNumber.get10thPower(5);
         Assertions.assertEquals(0, result);
     }
 
     @Test
     public void testGetPowerWithMultipleDigits() {
         PalindromeNumber palindromeNumber = new PalindromeNumber();
-        int result = palindromeNumber.getPower(123);
+        int result = palindromeNumber.get10thPower(123);
         Assertions.assertEquals(2, result);
     }
 
     @Test
     public void testGetPowerWithNegativeNumber() {
         PalindromeNumber palindromeNumber = new PalindromeNumber();
-        int result = palindromeNumber.getPower(-123);
+        int result = palindromeNumber.get10thPower(-123);
         Assertions.assertEquals(2, result);
     }
 }

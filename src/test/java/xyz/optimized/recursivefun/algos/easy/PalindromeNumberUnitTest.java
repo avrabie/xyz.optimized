@@ -14,11 +14,22 @@ public class PalindromeNumberUnitTest {
     void testReverseDigits() {
         PalindromeNumber palindrome = new PalindromeNumber();
 
-//        assertEquals(0, palindrome.reverseDigits(0), "Reversing 0 should return 0");
-//        assertEquals(1, palindrome.reverseDigits(1), "Reversing 1 should return 1");
+        assertEquals(0, palindrome.reverseDigits(0), "Reversing 0 should return 0");
+        assertEquals(1, palindrome.reverseDigits(1), "Reversing 1 should return 1");
         assertEquals(123, palindrome.reverseDigits(321), "Reversing 321 should return 123");
-//        assertEquals(54321, palindrome.reverseDigits(12345), "Reversing 12345 should return 54321");
-//        assertEquals(123456789, palindrome.reverseDigits(987654321), "Reversing 987654321 should return 123456789");
+        assertEquals(54321, palindrome.reverseDigits(12345), "Reversing 12345 should return 54321");
+        assertEquals(123456789, palindrome.reverseDigits(987654321), "Reversing 987654321 should return 123456789");
+    }
+
+    @Test
+    void testReverseDigitsNonRecursive() {
+        PalindromeNumber palindrome = new PalindromeNumber();
+
+        assertEquals(0, palindrome.nonRecursiveReverse(0), "Reversing 0 should return 0");
+        assertEquals(1, palindrome.nonRecursiveReverse(1), "Reversing 1 should return 1");
+        assertEquals(123, palindrome.nonRecursiveReverse(321), "Reversing 321 should return 123");
+        assertEquals(54321, palindrome.nonRecursiveReverse(12345), "Reversing 12345 should return 54321");
+        assertEquals(123456789, palindrome.nonRecursiveReverse(987654321), "Reversing 987654321 should return 123456789");
     }
 
     @Test
