@@ -11,14 +11,21 @@ public class PalindromeNumber {
     }
 
 
-    public boolean isPalindrome(int num) {
-        if (num < 0) num = -1 * num;
-        return num == reverseDigits(num);
+    public boolean isPalindrome(int x) {
+        if(x == 0) return true;
+        if (x < 0 || x % 10 == 0) return false;
+        return x == reverseDigits(x);
     }
 
-    private int reverseDigits(int r) {
+    public int reverseDigits(int r) {
         if (r == 0) return 0;
-        return 10 * reverseDigits(r / 10) + r % 10;
+        return  (r % 10)* (int) Math.pow(10,getPower(r)) + reverseDigits(r/10) ;
+    }
+
+    public int getPower(int r) {
+        if (r<0) return getPower(r*-1);
+        if (r<10) return 0;
+        return getPower(r/10)+1;
     }
 
     public int nonRecursiveReverse(int x) {
