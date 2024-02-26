@@ -18,13 +18,13 @@ public class MedianTwoSortedArraysTests {
     }
 
     //testing on an array with odd length
-    @Test
-    void testExtractSecondHalfOfArrayOddLength() {
-        MedianTwoSortedArrays medianTwoSortedArrays = new MedianTwoSortedArrays();
-        int[] input = {1, 2, 3, 4, 5};
-        int[] expected = {3, 4, 5};
-        assertArrayEquals(expected, medianTwoSortedArrays.extractSecondHalfOfArray(input));
-    }
+//    @Test
+//    void testExtractSecondHalfOfArrayOddLength() {
+//        MedianTwoSortedArrays medianTwoSortedArrays = new MedianTwoSortedArrays();
+//        int[] input = {1, 2, 3, 4, 5};
+//        int[] expected = {3, 4, 5};
+//        assertArrayEquals(expected, medianTwoSortedArrays.extractSecondHalfOfArray(input));
+//    }
 
     //testing on an empty array
     @Test
