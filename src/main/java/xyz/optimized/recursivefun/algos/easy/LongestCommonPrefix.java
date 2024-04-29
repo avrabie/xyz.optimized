@@ -22,4 +22,14 @@ public class LongestCommonPrefix {
         }
         return prefix.substring(0,end);
     }
+
+    private int indexOfCommonPrefix(String prefix, String str) {
+        int min = Math.min(prefix.length(), str.length());
+        int i=0;
+        while (i<min && prefix.charAt(i) == str.charAt(i)) {
+            i++;
+        }
+
+        return i;
+    }
 }
