@@ -1,23 +1,14 @@
 package xyz.optimized.recursivefun.algos.medium;
 
 
-
-
 public class QuickSortSorting {
 
     public static void main(String[] args) {
-int[] arr = {10, 7, 8, 9, 1, 5};
-        int n = arr.length;
+        int[] arr = {10, 7, 8, 9, 1, 5};
         quickSort(arr);
         printArray(arr);
     }
 
-    public static void printArray(int[] arr) {
-        for (int i : arr) {
-            System.out.print(i + " ");
-        }
-        System.out.println();
-    }
 
     public static void quickSort(int[] arr) {
         quickSort(arr, 0, arr.length - 1);
@@ -44,5 +35,13 @@ int[] arr = {10, 7, 8, 9, 1, 5};
         int temp = arr[low];
         arr[low] = arr[high];
         arr[high] = temp;
+    }
+
+
+    public static void printArray(int[] arr) {
+        for (int i : arr) {
+            System.out.print(i + " ");
+        }
+        System.out.println();
     }
 }
